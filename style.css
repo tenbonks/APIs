@@ -1,3 +1,11 @@
+body { 
+    background: url(img/star-bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 span {
     font-weight: 600;
 }
@@ -31,6 +39,11 @@ button {
 .white-hr {
     background-color: #fff;
     width: 35em;
+}
+
+#data {
+    color: yellow;
+    background-color: rgb(77, 68, 68, 0.2)
 }
 
 
