@@ -30,6 +30,7 @@ function generatePaginationButtons(next, prev) {                                
     } else if (!next && prev) {
         return `<button onclick="writeToDocument('${prev}')">Next</button>`                 //if there is a prev set of data, it will return a next butto, but not next
     }
+    
 }
 
 function writeToDocument(url) {
@@ -54,7 +55,8 @@ function writeToDocument(url) {
 
             Object.keys(item).forEach(function(key) {
                 var rowData = item[key].toString();
-                var truncatedData = rowData.substring(0, 15)
+                var truncatedData = rowData.substring(0, 18)
+               
                 dataRow.push(`<td>${truncatedData}</td>`);
             });
             tableRows.push(`<tr>${dataRow}</tr>`);
