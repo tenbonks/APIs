@@ -36,6 +36,9 @@ function writeToDocument(url) {
     var el = document.getElementById("data");
     el.innerHTML = "";
 
+    var pag = document.getElementById("pagination");
+    pag.innerHTML = "";
+
     getData(url, function(data) {
 
         if (data.next || data.previous) {
@@ -57,6 +60,7 @@ function writeToDocument(url) {
             tableRows.push(`<tr>${dataRow}</tr>`);
         });
 
-        el.innerHTML = `<table>${tableHeaders}${tableRows}</table>${pagination}`.replace(/,/g, "");
+        el.innerHTML = `<table>${tableHeaders}${tableRows}</table>`.replace(/,/g, "");
+        pag.innerHTML =`${pagination}`
     });
 }
