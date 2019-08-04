@@ -5,3 +5,8 @@ span {
 button {
     margin: 0 5px;
 }
+
+.white-hr {
+    background-color: #fff;
+    width: 35em;
+}
