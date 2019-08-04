@@ -2,7 +2,7 @@
     <html>
 
     <head>
-        <title>AJAX Test</title>
+        <title>Star Wars Database</title>
 
         <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
@@ -13,7 +13,7 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
-            <a class="navbar-brand" href="#">AJAX <span>Testing</span></a>
+            <a class="navbar-brand" href="#">Star Wars <span>Database</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
                 aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,24 +21,24 @@
         </nav>
 
         <div class=" container jumbotron text-center">
-            <h1 class="display-3">Welcome to AJAX Testing</h1>
-            <p class="lead">can ya' dig it?</p>
+            <h1 class="display-3">Star Wars Database</h1>
+            <p class="lead">For all your Star Wars Needs.</p>
             <hr class="my-4">
-            <p>Something, something, Darkside</p>
+            <p>Use the source Luke!</p>
             <p class="lead">
-                <a class="btn btn-success btn-lg" href="#" role="button">Useless.</a>
+                <a class="btn btn-success btn-lg" href="https://swapi.co/" role="button" target="_blank">SWAPI</a>
             </p>
         </div>
 
-        <div class=" container jumbotron text-center">
+        <div class="container-fluid text-center">
             <button class="btn btn-success" onclick="writeToDocument('https://swapi.co/api/people')">People</button>
             <button class="btn btn-success" onclick="writeToDocument('https://swapi.co/api/planets')">Planets</button>
             <button class="btn btn-success" onclick="writeToDocument('https://swapi.co/api/species')">species</button>
             <button class="btn btn-success" onclick="writeToDocument('https://swapi.co/api/starships')">Starships</button>
             <button class="btn btn-success" onclick="writeToDocument('https://swapi.co/api/vehicles')">vehicles</button>
             <button class="btn btn-success" onclick="writeToDocument('https://swapi.co/api/films')">Films</button>
-            <hr>
-            <div id="data"></div>
+            <hr class="white-hr">
+            <table class="table table-hover" id="data"></table>
         </div>
     </body>
 
